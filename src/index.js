@@ -41,7 +41,10 @@ class onvifInstance extends InstanceBase {
 		this.CHOICES_PRESETS = [{ id: 0, label: '(no presets loaded)' }]
 	}
 
-	async destroy() {}
+	async destroy() {
+		clearInterval(this.pollingInterval)
+		clearTimeout(this.reconnectTimeout)
+	}
 
 	async init(config) {
 		this.configUpdated(config)
