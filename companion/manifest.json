@@ -3,7 +3,7 @@
 	"name": "generic-onvif",
 	"shortname": "onvif",
 	"description": "Companion module for ONVIF devices",
-	"version": "0.0.0",
+	"version": "1.1.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/bitfocus/companion-module-generic-onvif.git",
 	"bugs": "https://github.com/bitfocus/companion-module-generic-onvif/issues",

@@ -103,11 +103,11 @@ module.exports = {
 			{
 				type: 'number',
 				id: 'reconnectInterval',
-				label: 'Reconnect Interval (ms)',
+				label: 'Reconnect Interval (s)',
 				width: 3,
-				default: 30000,
-				min: 1000,
-				max: 300000,
+				default: 30,
+				min: 1,
+				max: 300,
 			},
 			{
 				type: 'static-text',

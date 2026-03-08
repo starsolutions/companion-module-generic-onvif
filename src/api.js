@@ -37,7 +37,7 @@ module.exports = {
 							'error',
 							'Check your ONVIF device configuration. The authentication mode should be set to "digest/wsse".'
 						)
-						const delay = self.config.reconnectInterval || 30000
+						const delay = (self.config.reconnectInterval || 30) * 1000
 						self.log('info', `Retrying connection in ${delay / 1000} seconds...`)
 						self.reconnectTimeout = setTimeout(() => self.initConnection(), delay)
 						return
